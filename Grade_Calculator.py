@@ -20,10 +20,10 @@ def is_pass(marks):
     return all(m >= 40 for m in marks)
 
 
-marks = [85, 90, 78]
+marks = [76, 89, 90]
 
 avg = average(marks)
 print("Marks  :", marks)
 print(f"Average: {avg:.2f}")
 print("Grade  :", grade(avg))
-print("Result :", "PASS" if is_pass(marks) else "FAIL")
+print("Result :", "PASS" if is_pass(marks) else "FAIL") 
