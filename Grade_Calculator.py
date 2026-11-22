@@ -19,11 +19,20 @@ def grade(avg):
 def is_pass(marks):
     return all(m >= 40 for m in marks)
 
+def highest(marks):
+    return max(marks)
+
+
+def lowest(marks):
+    return min(marks)
+
 
 marks = [76, 89, 90]
 
 avg = average(marks)
 print("Marks  :", marks)
 print(f"Average: {avg:.2f}")
+print("Highest:", highest(marks))
+print("Lowest:", lowest(marks))
 print("Grade  :", grade(avg))
 print("Result :", "PASS" if is_pass(marks) else "FAIL") 
